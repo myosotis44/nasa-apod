@@ -1,38 +1,308 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Baumans&family=Megrim&display=swap");
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+/**************** HOME PAGE *****************/
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url(./constellations.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.home-link {
+  font-size: 45px;
+  display: inline-block;
+  padding: 40px 80px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s ease all;
+  font-family: "Baumans", cursive;
+  background: #360033; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    transparent,
+    #0b8793,
+    #360033,
+    transparent
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    transparent,
+    #0b8793,
+    #360033,
+    transparent
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+/* #1289a7
+#0652dd */
+
+.home-link:hover {
+  color: white;
+  font-size: 55px;
+}
+
+/**********IMAGE OF THE DAY***************/
+
+.pod {
+  background: black;
+  overflow: hidden;
+  color: white;
+  height: auto;
+  min-height: 100vh;
+}
+
+.photo {
+  padding: 20px 0 20px 20px;
+  width: auto;
+  transition: 1.8s ease all;
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.infos {
+  height: auto;
+  max-width: 65%;
+  display: block;
+  margin: 0 auto;
+}
+
+.photo:hover {
+  filter: contrast(1.15);
+}
+
+@media (max-width: 1000px) {
+  .samepage-link {
+    top: 10%;
+  }
+}
+
+.explanation {
+  padding: 20px;
+  font-family: "Baumans", cursive;
+  font-weight: 100;
+  border: 1px solid white;
+  box-shadow: 2px 3px 0px white;
+  line-height: 30px;
+  background: #000000;
+  background: linear-gradient(169deg, #833471 0%, transparent 100%);
+  margin-right: 14px;
+}
+
+.title {
+  font-family: "Megrim", cursive;
+  text-align: center;
+  transition: 0.8s ease all;
+  position: relative;
+}
+
+.title:hover {
+  text-shadow: 2px 1px 2px;
+}
+
+.date {
+  font-family: "Megrim", cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  text-decoration: none;
+  color: white;
+  background: #833471;
+  padding: 10px;
+  transition: 0.6s ease all;
+  font-family: "Megrim", cursive;
+  font-weight: 100;
+  margin: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link:hover {
+  border-radius: 50%;
+  background: #5758bb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/**************SEARCH IMAGE BY DATE**************/
+
+.center-input {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  font-family: "Baumans", cursive;
+}
+
+.select-date {
+  background-color: #360033;
+  letter-spacing: 1.5px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: black double 6px;
+  font-size: 14px;
+}
+
+.input-date {
+  background-color: #833471;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.video {
+  display: block;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*******MOON PAGE**********/
+
+.link-moon {
+  text-decoration: none;
+  color: white;
+  padding-left: 1em;
+}
+
+.link-moon:hover {
+  color: plum;
+  transform: rotate(360deg);
+  transition: all 2s ease-in-out;
+}
+
+.link-moon:active {
+  color: #833471;
+}
+
+.fa-moon {
+  font-size: 15px;
+}
+
+.title-planets {
+  font-family: "Baumans", cursive;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.img-planets {
+  top: 5%;
+  position: relative;
+  width: 70%;
+  display: flex;
+  align-self: center;
+  filter: blur(2px);
+}
+
+.img-planets:hover {
+  transition: all 0.8s ease-in-out;
+  filter: blur(0px);
+}
+
+.fa-brands {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 50%;
+  padding: 6px;
+  transform: translateX(-50%);
+  transition: color 0.3s ease-out;
+}
+
+.fa-brands:hover {
+  color: dodgerblue;
+}
+
+.card {
+  height: 230vh;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  left: 50%;
+  top: 20%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.changeLang:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+}
+
+.themoon {
+  top: 10%;
+  position: relative;
+  font-family: "Baumans", cursive;
+  /* background: #6b6b83; */
+  padding: 17px;
+  border-radius: 15px;
+}
+
+.samepage-link {
+  font-family: "Megrim", cursive;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 74%;
+  font-weight: bolder;
+  padding: 4px;
+  width: 150px;
+  text-align: center;
+  border: white 5px double;
+}
+
+.fa-circle-chevron-up {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 14px;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  font-family: "Baumans", cursive;
+  padding: 7px;
+  text-align: center;
+  border: double 3px #6b6b83;
+  display: inline-block;
+  margin-bottom: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn:hover {
+  font-weight: bolder;
+}
+
+/*******FAVORITES*********/
+
+.favorite-img {
+  height: 60%;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.fav-title {
+  text-align: center;
+  font-family: "Megrim", cursive;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 4px white;
+}
+
+.favs {
+  text-decoration: none;
 }
