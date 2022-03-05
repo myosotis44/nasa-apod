@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import reactDom from "react-dom";
 import NavBar from "./NavBar";
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
@@ -41,8 +40,7 @@ export default function POD() {
                 title="space-video"
                 src={photoData.url}
                 frameBorder="0"
-                allow="autoplay" // ;encrypted-media
-                allow="encrypted-media"
+                allow="autoplay; encrypted-media"
                 allowFullScreen
                 className="photo" />
            )}
@@ -52,6 +50,7 @@ export default function POD() {
                <a id="tweet-quote" href=
                 {encodeURI(`http://www.twitter.com/intent/tweet?text=${photoData.explanation}image=${photoData.url}`)}
                 target='_blank'
+                rel="noreferrer"
                 >
                 <i className="fa-brands fa-twitter"></i>
                 </a>

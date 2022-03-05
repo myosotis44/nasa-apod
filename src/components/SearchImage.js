@@ -61,8 +61,7 @@ return (
                 title="space-video"
                 src={photoByDate.url}
                 frameBorder="0"
-                allow="autoplay"
-                allow="encrypted-media"
+                allow="autoplay; encrypted-media"
                 height="650"
                 width="860"
                 allowFullScreen
