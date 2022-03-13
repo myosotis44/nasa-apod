@@ -42,7 +42,7 @@ return (
         <NavBar />
 
      <div className="center-input">
-        <p className="select-date">Select a date in the past: </p>
+        <p className="select-date">Select a date in the past (since 1995): </p>
         <input type="date" className="input-date" value={inputValue} onChange={(e) => setInputValue(e.target.value)}></input>
         {/*<button type="submit" id="dateSearch" onClick={() => fetchDatePhoto()}>Envoyer</button>*/}
      </div>

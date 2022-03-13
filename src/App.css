@@ -154,7 +154,7 @@
   transition: 0.6s ease all;
   font-family: "Megrim", cursive;
   font-weight: 100;
-  margin: 3px;
+  margin: 0 3% 2% 0;
 }
 
 .link:hover {
@@ -198,12 +198,14 @@
   text-decoration: none;
   color: white;
   padding-left: 1em;
+  background: none;
 }
 
 .link-moon:hover {
   color: plum;
   transform: rotate(360deg);
   transition: all 2s ease-in-out;
+  background: none;
 }
 
 .link-moon:active {
@@ -334,4 +336,9 @@
 
 .favs {
   text-decoration: none;
+  background: none;
+}
+
+.favs:hover {
+  background: none;
 }
