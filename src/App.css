@@ -85,7 +85,36 @@
 
 @media (max-width: 1000px) {
   .samepage-link {
-    top: 10%;
+    top: 5%;
+  }
+
+  .infos {
+    max-width: 99%;
+    margin-left: 3%;
+  }
+
+  .explanation {
+    width: auto;
+  }
+
+  .fa-solid,
+  .favs,
+  .link {
+    display: flex;
+    position: relative;
+    top: 5px;
+    justify-content: space-around;
+  }
+
+  .img-planets-responsive {
+    width: 100vw;
+  }
+
+  .changeLang {
+    position: absolute;
+    left: 50%;
+    top: 98%;
+    transform: translateX(-50%);
   }
 }
 
@@ -223,7 +252,7 @@
   height: 230vh;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  max-width: 60%;
   left: 50%;
   top: 20%;
   position: relative;

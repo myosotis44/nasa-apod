@@ -8,7 +8,7 @@ const Moon = () => {
     const english = ` <p><li>The Moon is <strong>Earth's only natural satellite.</strong></li> </p> \
     <p><li>The brightest and largest object in our night sky, the Moon makes Earth <strong>a more livable planet </strong>by moderating our home planet's wobble on its axis, leading to <strong>a relatively stable climate. </strong> It also causes tides, creating a rhythm that has guided humans for thousands of years. The Moon was likely formed after <strong>a Mars-sized body collided with Earth.</strong></li></p> \
     <p><li>Earth's Moon is the fifth largest of the 200+ moons orbiting planets in our solar system. \
-\
+
 Earth's only natural satellite is simply called \"the Moon\" because people didn't know other moons existed until<strong> Galileo Galilei discovered four moons orbiting Jupiter in 1610.</strong></li></p> \
 \
 <p><li> NASA currently has three robotic spacecraft exploring the Moon – Lunar Reconnaissance Orbiter and the twin ARTEMIS spacecraft (not to be confused with NASA's new Artemis program to send astronauts back to the Moon).</li></p>`
@@ -40,8 +40,11 @@ Earth's only natural satellite is simply called \"the Moon\" because people didn
         <div className='pod'>
             <NavBar/>
             <div className='card'>
+                <div className='img-planets-responsive'>
         <img src='/Lunarlibration.gif' alt='moon' className='img-planets'/>
+                </div>
         <a href='#themooncard' className='samepage-link'>Learn more about the moon</a>
+            
         <div className='infos themoon' id='themooncard'>
         <a href='#'><i className="fa-solid fa-circle-chevron-up"></i></a>
         <input className='changeLang' type='image' src='/drapeau-france.png' alt='drapeau-francais' onClick={()=> changeLang()} style={{float: 'right', width: '45px', height: '40px'}}></input>
@@ -50,7 +53,7 @@ Earth's only natural satellite is simply called \"the Moon\" because people didn
         ) : (
         <h1 className='title'>La Lune <span className="fa-regular fa-moon"></span> </h1>
         )}
-        <div>
+        <div className='moon-text'>
             {Parser().parse(lang)}
         </div>
         </div>
