@@ -1,3 +1,28 @@
+# NASA Image of the Day
+
+<b>Page d'accueil << Discover the Cosmos >></b>
+
+<b> Image du jour </b>
+
+Après avoir cliqué sur le lien de la page d'accueil, l'utilisateur découvre chaque jour une photo ou une vidéo de l'espace, accompagnée d'un texte explicatif écrit par un astronaute professionnel.
+
+<b> Search Images by Date </b>
+
+Calendrier permettant de retrouver toutes les images/vidéos et leur texte explicatif depuis août 1995.
+
+<b> La Lune </b>
+
+Petite présentation de la lune. 
+
+
+<b> Onglet 'coups de coeur' </b>
+
+Quand on cherche des données par date, il est possible d'ajouter l'image ou la vidéo dans l'onglet coups de coeur, en cliquant sur "Add to my favorites list".
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
