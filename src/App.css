@@ -228,12 +228,10 @@
   width: 70%;
   display: flex;
   align-self: center;
-  filter: blur(2px);
 }
 
 .img-planets:hover {
   transition: all 0.8s ease-in-out;
-  filter: blur(0px);
 }
 
 .fa-brands {

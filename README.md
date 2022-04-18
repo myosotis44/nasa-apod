@@ -1,5 +1,7 @@
 # NASA Image of the Day
 
+Site hebérgé sur Netflify : [https://nasa-imageoftheday.netlify.app/](https://nasa-imageoftheday.netlify.app/)
+
 <b>Page d'accueil << Discover the Cosmos >></b>
 
 <b> Image du jour </b>
@@ -12,16 +14,11 @@ Calendrier permettant de retrouver toutes les images/vidéos et leur texte expli
 
 <b> La Lune </b>
 
-Petite présentation de la lune. 
-
+Petite présentation de la lune.
 
 <b> Onglet 'coups de coeur' </b>
 
 Quand on cherche des données par date, il est possible d'ajouter l'image ou la vidéo dans l'onglet coups de coeur, en cliquant sur "Add to my favorites list".
-
-
-
-
 
 # Getting Started with Create React App
 

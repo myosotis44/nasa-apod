@@ -56,6 +56,7 @@ Earth's only natural satellite is simply called \"the Moon\" because people didn
         <div className='moon-text'>
             {Parser().parse(lang)}
         </div>
+        <img src='/moon2.jpg' alt='moon' className='img-planets'/>
         </div>
         </div>
         </div>
