@@ -45,8 +45,9 @@ const UserList = () => {
                 {listData.length > 0 ?
                 (listData.map((picture) => 
                 <div>
-                    <img src={picture.url} className="favorite-img" alt="favorite-images-videos"/>
+                    <img src={picture.url} className="favorite-img" alt="favorite-images-videos" onClick={() => window.open(`${picture.url}`)}/>
                     <p className='title'>{picture.title}</p>
+                    <p className="date">{picture.date} </p>
                  {/* <div className='btn' onClick={() => deletePicture()}>Delete from the list</div> */}
                 </div>
                 )

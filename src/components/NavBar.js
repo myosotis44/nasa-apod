@@ -8,8 +8,8 @@ export default function NavBar() {
             <ul>
                 <Link className="link" to="/"> Go home ✨</Link>
                 <Link className="link" to="/search">Search Images by Date 📅</Link>
-                <Link className="link link-moon" to="/moon"> <i className="fa-solid fa-moon"></i></Link>
-                <Link className="link favs" to="/favs"> 💖</Link>
+                <Link className="link link-moon" to="/moon"> <i className="fa-solid fa-moon"></i>The moon</Link>
+                <Link className="link favs" to="/favs"> Favorites</Link>
 
             </ul>
         </div>
